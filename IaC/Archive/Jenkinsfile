@@ -8,12 +8,12 @@ pipeline {
         }    
         stage("Pull HTML from Github Repo") {
             steps {
-                sh "git clone https://github.com/Matthew-S-Buchanan/BAH-23-2.git"
+                sh "git clone https://github.com/BahCi-CdProject1/web.git"
             }
         }
         stage("Push file to web instance") {
             steps {
-                sh "scp -r -v -o StrictHostKeyChecking=no -i /var/lib/jenkins/.ssh/FinalKey.pem /var/lib/jenkins/workspace/EKS/BAH-23-2/Web*/* ec2-user@18.207.252.213:/var/www/html"
+                sh "scp -r -v -o StrictHostKeyChecking=no -i /var/lib/jenkins/.ssh/test-app1.pem /var/lib/jenkins/workspace/pipeline-test1/web*/* ubuntu@172.31.57.5:/var/www/html"
             }
         }
     }
