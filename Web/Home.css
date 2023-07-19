@@ -2100,7 +2100,8 @@
     margin-right: auto;
   }
 } .u-section-11 {
-  background-image: url("images/pexels-photo-276374.webp");
+  background-image: url("images/chairbg.jpg");
+  background-position: 50% 50%;
 }
 
 .u-section-11 .u-sheet-1 {
@@ -2150,10 +2151,6 @@
 }
 
 @media (max-width: 1199px) {
-   .u-section-11 {
-    background-position: 50% 50%;
-  }
-
   .u-section-11 .u-sheet-1 {
     min-height: 26px;
   }
